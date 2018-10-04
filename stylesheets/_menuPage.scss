@@ -1,0 +1,51 @@
+.box {
+    display: block;
+    // width: 49.9vw;
+    
+    .menuOptions {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        font-size: 40px;
+    }
+}
+
+#leftSide {
+    border: 1px solid black;
+    opacity: 1;
+    float: left;
+    // position: fixed;
+    // left: 0;
+}
+
+// #leftSide:hover {
+//     opacity: 0;
+// }
+
+#rightSide {
+    border: 1px solid black;
+    background-image: url(/home/eric/Desktop/Maplestory2App/images/ms2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% -10%;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+
+#videoBkgd {
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+}
+
+
+#menuSkills {
+    position: fixed;
+    left: 23vw;
+    top: 49vh;
+    z-index: 1;
+    font-size: 40px;
+}
+

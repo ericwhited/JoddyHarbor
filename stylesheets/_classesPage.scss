@@ -1,0 +1,40 @@
+// Layout for once you click into a class page
+
+#modelWrap {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+#zerkerModel {
+    height: 700px;
+    width: 1400px;
+    background: gray;
+    display: inline-block;
+
+}
+
+#className {
+    width: 400px;
+    height: 75px;
+    border: 3px solid white;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.6);
+    margin: 0 auto;
+
+}
+
+
+.classesLeftSide {
+   width: 40%; 
+}
+
+
+
+
+.classesRightSide {
+    width: 59%;
+
+}

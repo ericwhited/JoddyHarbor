@@ -1,0 +1,102 @@
+#ms2Logo {
+  text-align: center;
+  margin: 0 auto;
+  height: 180px; }
+
+.classPhotos {
+  height: 488px;
+  /* width: 150px; */
+  /* border: 3px solid black; */
+  transition: all 0.2s ease-in-out; }
+
+.classPhotos:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.342); }
+
+#classPicker {
+  text-align: center;
+  margin-top: 1vh;
+  padding: 35px 80px 80px 80px;
+  position: relative; }
+
+#classesBody {
+  background-image: url(/home/eric/Desktop/Maplestory2App/images/background.jpg); }
+
+#classesHeader {
+  margin-top: 20px;
+  text-align: center; }
+
+#modelWrap {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  left: 0;
+  text-align: center; }
+
+#zerkerModel {
+  height: 700px;
+  width: 1400px;
+  background: gray;
+  display: inline-block; }
+
+#className {
+  width: 400px;
+  height: 75px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.6);
+  margin: 0 auto; }
+
+.classesLeftSide {
+  width: 40%; }
+
+.classesRightSide {
+  width: 59%; }
+
+.box {
+  display: block; }
+  .box .menuOptions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    font-size: 40px; }
+
+#leftSide {
+  border: 1px solid black;
+  opacity: 1;
+  float: left; }
+
+#rightSide {
+  border: 1px solid black;
+  background-image: url(/home/eric/Desktop/Maplestory2App/images/ms2.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% -10%;
+  position: absolute;
+  right: 0;
+  overflow: hidden; }
+
+#videoBkgd {
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0; }
+
+#menuSkills {
+  position: fixed;
+  left: 23vw;
+  top: 49vh;
+  z-index: 1;
+  font-size: 40px; }
+
+* {
+  margin: 0; }
+
+.box {
+  display: inline-block;
+  border: 1px solid black;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

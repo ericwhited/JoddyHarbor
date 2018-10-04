@@ -1,0 +1,36 @@
+@import "classPicker";
+@import 'classesPage';
+@import "menuPage";
+
+// resets
+* {
+    margin: 0;
+}
+
+// L&R div layout setup
+
+.box {
+    display: inline-block;
+    border: 1px solid black;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+// #leftSide {
+//     /* border: 2px solid black; */
+//     width: 40%;
+//     float: left;
+//     position: fixed;
+//     /* margin-left: 0.5px; */
+//     background: #CCA19F;
+//     left: 0;
+    
+// }
+
+// #rightSide {
+//     width: 60%;
+//     position: absolute;
+//     right: 0;
+//     overflow: hidden;
+// }
