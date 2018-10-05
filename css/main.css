@@ -1,3 +1,78 @@
+#modelWrap {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  z-index: -1; }
+
+#modelWrap.show {
+  z-index: 10; }
+
+.classPopUpModel {
+  height: 700px;
+  width: 1400px;
+  background: white;
+  opacity: 0;
+  transition: all .3s;
+  margin: 0 auto;
+  display: none;
+  border: 9px solid white; }
+
+.classPopUpModelShow {
+  border-radius: 30px;
+  opacity: 1;
+  display: inline-block; }
+
+.sides {
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 10px; }
+
+.leftSide {
+  width: 35%;
+  background-image: url(../images/backgrounds/perion2.png);
+  background-size: cover; }
+
+.rightSide {
+  width: 59.7%;
+  background: white; }
+
+.className {
+  color: #790404;
+  padding-top: 10px;
+  text-decoration: underline;
+  font-size: 45px; }
+
+.model_class_photo {
+  height: 500px; }
+
+.button {
+  background: none;
+  border: 3px solid white;
+  border-radius: 50px;
+  color: white;
+  display: inline-block;
+  font-size: 35px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 7px 0 0 0;
+  width: 200px; }
+
+#skills_button, #video_button {
+  margin: 20px 10px 0 0; }
+
+.skills {
+  border: 2px solid black; }
+
+.skillPicture, .skillName {
+  display: inline-block; }
+
+.skillName {
+  font-size: 35px; }
+
 #ms2Logo {
   text-align: center;
   margin: 0 auto;
@@ -20,38 +95,26 @@
   position: relative; }
 
 #classesBody {
-  background-image: url(../images/background.jpg); }
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#classPicker a {
+  z-index: 2; }
+
+#greyBox {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  visibility: hidden; }
 
 #classesHeader {
   margin-top: 20px;
   text-align: center; }
-
-#modelWrap {
-  position: fixed;
-  top: 10%;
-  right: 0;
-  left: 0;
-  text-align: center; }
-
-#zerkerModel {
-  height: 700px;
-  width: 1400px;
-  background: gray;
-  display: inline-block; }
-
-#className {
-  width: 400px;
-  height: 75px;
-  border: 3px solid white;
-  border-radius: 10px;
-  background: rgba(128, 128, 128, 0.6);
-  margin: 0 auto; }
-
-.classesLeftSide {
-  width: 40%; }
-
-.classesRightSide {
-  width: 59%; }
 
 .box {
   display: block; }
@@ -92,11 +155,9 @@
 * {
   margin: 0; }
 
-.box {
-  display: inline-block;
-  border: 1px solid black;
-  height: 100vh;
+body {
+  height: 100%;
   overflow: hidden;
-  text-align: center; }
+  font-family: 'Assistant', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

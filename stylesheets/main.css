@@ -42,7 +42,7 @@ body, #menuPage {
 
 
 /* buttons */
-.button {
+/* .button {
     background: none;
     border: 3px solid gray;
     border-radius: 50px;
@@ -54,16 +54,16 @@ body, #menuPage {
     padding: 7px 0 0 0;
     width: 300px;
     
-}
+} */
 
-#skills_button, #video_button {
+/* #skills_button, #video_button {
     margin: 20px 10px 0 0;
 }
 
 #back_button {
     position: relative;
     bottom: 90px;
-}
+} */
 
 
 .skills {

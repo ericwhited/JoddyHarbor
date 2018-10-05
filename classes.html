@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 </head>
 <body id="classesBody">
 
@@ -19,41 +20,41 @@
     <!-- class picker -->
     <main id ="classPicker">
 
-        <a href="knight.html">
+        <a id="knightLink" href="#">
           <img id="knight" class="classPhotos" src="./images/allClasses/knightMini.png" alt="knight">
         </a>
         
 
-        <a href="zerker.html">
+        <a id="zerkerLink" href="#">
             <img id="Zerker" class="classPhotos" src="./images/allClasses/zerkerMini.png" alt="zerker">
         </a>
         
-        <a href="priest.html">
+        <a id="priestLink" href="#">
                 <img id="preist" class="classPhotos" src="./images/allClasses/priestMini.png" alt="preist">
             </a>
 
-        <a href="wizzard.html">
-            <img id="wizzard" class="classPhotos" src="./images/allClasses/wizzardMini.png" alt="wizzard">
+        <a id="wizardLink" href="#">
+            <img id="wizard" class="classPhotos" src="./images/allClasses/wizardMini.png" alt="wizard">
         </a>
 
-        <a href="ranger.html">
+        <a id="rangerLink" href="#">
             <img id="ranger" class="classPhotos" src="./images/allClasses/rangerMini.png" alt="ranger">
         </a>
 
-        <a href="hgunner.html">
+        <a id="hgunnerLink" href="#">
                 <img id="HGunner" class="classPhotos" src="./images/allClasses/HGunnerMini.png" alt="HGunner">
         </a>
 
-        <a href="thief.html">
+        <a id="thiefLink" href="#">
                 <img id="thief" class="classPhotos" src="./images/allClasses/thiefMini.png" alt="thief">
         </a>
 
-        <a href="assassin.html">
+        <a id="assassinLink" href="#">
                 <img id="assassin" class="classPhotos" src="./images/allClasses/AssassinMini.png" alt="assassin">
         </a>
 
 
-        <script src="scripts/classes.js"></script>    
+            
     </main>
 
     <!-- <div id="className">
@@ -61,11 +62,100 @@
     </div> -->
     
     <div id="modelWrap">
-        <div id="classPopUpModel">
-            <div id="leftSide"></div>
-            <div id="rigtSide"></div>
+        
+        <div id="knightModel" class="classPopUpModel"> 
+                <div id="leftSide">Knight</div>
+                <div id="rightSide"></div>
         </div>
-    </div>
 
+        <div id="zerkerModel" class="classPopUpModel"> 
+
+            <div class="leftSide sides">
+                <div id="button_wrap">
+                    <button id="skills_button" class="button">Skills</button>
+                    <button id="video_button" class="button">Video</button>
+                    <img id="zerker" class="model_class_photo" src="images/zerker/zerker.png" alt="zerker">
+                    <h1 id="zerkerName" class="className">Berserker</h1>
+                        <!-- <button id="back_button" class="button">back</button> -->
+                    </div>
+            </div>
+
+
+            <div class="rightSide sides">
+
+                <div class="skills">
+                    <img class="skillPicture" src="images/zerker/DarkAura.png" alt="DarkAura">
+                    <p class="skillName">Dark Aura</p>
+                </div>
+
+                <div class="skills">
+                        <img class="skillPicture" src="images/zerker/DarkAura.png" alt="DarkAura">
+                        <p class="skillName">Dark Aura</p>
+                </div>
+
+                <div class="skills">
+                        <img class="skillPicture" src="images/zerker/DarkAura.png" alt="DarkAura">
+                        <p class="skillName">Dark Aura</p>
+                </div>
+
+                <div class="skills">
+                        <img class="skillPicture" src="images/zerker/DarkAura.png" alt="DarkAura">
+                        <p class="skillName">Dark Aura</p>
+                </div>
+
+                <div class="skills">
+                        <img class="skillPicture" src="images/zerker/DarkAura.png" alt="DarkAura">
+                        <p class="skillName">Dark Aura</p>
+                </div>
+
+                <div class="skills">
+                        <img class="skillPicture" src="images/zerker/DarkAura.png" alt="DarkAura">
+                        <p class="skillName">Dark Aura</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div id="priestModel" class="classPopUpModel"> 
+                <div id="leftSide">Priest</div>
+                <div id="rightSide"></div>
+        </div>
+
+        <div id="wizardModel" class="classPopUpModel"> 
+                <div id="leftSide">Wizard</div>
+                <div id="rightSide"></div>
+        </div>
+
+        <div id="rangerModel" class="classPopUpModel"> 
+                <div id="leftSide">Ranger</div>
+                <div id="rightSide"></div>
+        </div>
+
+        <div id="hgunnerModel" class="classPopUpModel"> 
+                <div id="leftSide">Heavy Gunner</div>
+                <div id="rightSide"></div>
+        </div>
+
+        <div id="thiefModel" class="classPopUpModel"> 
+                <div id="leftSide">Thief</div>
+                <div id="rightSide"></div>
+        </div>
+
+        <div id="assassinModel" class="classPopUpModel"> 
+                <div id="leftSide">Assassin</div>
+                <div id="rightSide"></div>
+        </div>
+        
+    </div>
+    <div id="greyBox"></div>
+
+
+    <script src="scripts/classes.js"></script>
 </body>
 </html>
+
+
+
+

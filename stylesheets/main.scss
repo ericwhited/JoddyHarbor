@@ -1,5 +1,5 @@
 @import "classPicker";
-@import 'classesPage';
+// @import 'classesPage';
 @import "indexPage";
 
 // resets
@@ -7,15 +7,22 @@
     margin: 0;
 }
 
+body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Assistant', sans-serif;
+
+}
+
 // L&R div layout setup
 
-.box {
-    display: inline-block;
-    border: 1px solid black;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
-}
+// .box {
+//     display: inline-block;
+//     border: 1px solid black;
+//     height: 100vh;
+//     overflow: hidden;
+//     text-align: center;
+// }
 
 // #leftSide {
 //     /* border: 2px solid black; */
