@@ -1,9 +1,12 @@
+@import 'classModels';
+
 #ms2Logo {
     text-align: center;
     margin: 0 auto;
     height: 180px;
 }
 
+// all of the hover photos
 .classPhotos {
     height: 488px;
     /* width: 150px; */
@@ -17,22 +20,49 @@
 
 }
 
+// main id that wraps all the class photos
 #classPicker {
     text-align: center;
     margin-top: 1vh; 
     padding: 35px 80px 80px 80px;
     position: relative;
     // moved class picker out of view to slide in from the top
-    // top: -900px;
+    // top: -900px;classPhotos:hover   {
 }
+
 
 
 
 #classesBody {
-    background-image: url(../images/background.jpg)
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+#classPicker a{
+    z-index: 2;
+}
+
+#greyBox {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    visibility: hidden;
+    // display: inline-block;
+}
+
+
+// ms logo link
 #classesHeader {
     margin-top: 20px;
     text-align: center;
 }
+
+// Model layout for once you click into a class page
+
+
+
