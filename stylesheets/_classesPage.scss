@@ -1,4 +1,4 @@
-// Layout for once you click into a class page
+// Model layout for once you click into a class page
 
 #modelWrap {
     position: fixed;
@@ -6,14 +6,25 @@
     right: 0;
     left: 0;
     text-align: center;
+    z-index: -1;
 }
 
-#zerkerModel {
+#modelWrap.show {
+    z-index: 10;
+}
+
+.classPopUpModel {
     height: 700px;
     width: 1400px;
     background: gray;
-    display: inline-block;
+    opacity: 0;
+    transition: all .3s;
+    margin: 0 auto;
+    
+}
 
+.classPopUpModelShow {
+    opacity: 1;
 }
 
 #className {
@@ -25,6 +36,8 @@
     margin: 0 auto;
 
 }
+
+
 
 
 .classesLeftSide {
