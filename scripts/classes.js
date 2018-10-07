@@ -19,7 +19,10 @@ var rangerModel = document.getElementById("rangerModel")
 var hgunnerModel = document.getElementById("hgunnerModel")
 var thiefModel = document.getElementById("thiefModel")
 var assassinModel = document.getElementById("assassinModel")
+
+// Gray Box to add shadow
 var greyBox = document.getElementById("greyBox")
+
 
 
 // Events
@@ -56,6 +59,16 @@ ranger.addEventListener("click", function(){
 })
 
 
+// skill expand
+var skills = document.getElementsByClassName("skills")
+
+for(i = 0; i<skills.length; i++) {
+    // skills[i].style.color = "red"
+    skills[i].onclick = function() {
+        skills.style.height = "82%"
+    }
+}
+
 // click out and exit model functionality
 document.querySelector('body').addEventListener('click', function(e) {
     if (!e.target.classList.contains('classPhotos') && !hasSomeParentTheClass(e.target, 'classPopUpModel')) {
@@ -71,6 +84,8 @@ document.querySelector('body').addEventListener('click', function(e) {
         greyBox.style.visibility = 'hidden';
     }
 })
+
+
 
 // click out and exit model functionality
 function hasSomeParentTheClass(element, classname) {
