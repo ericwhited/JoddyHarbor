@@ -1,10 +1,11 @@
 #modelWrap {
   position: fixed;
-  top: 10%;
+  top: 6%;
   right: 0;
   left: 0;
   text-align: center;
-  z-index: -1; }
+  z-index: -1;
+  padding: 70px; }
 
 #modelWrap.show {
   z-index: 10; }
@@ -16,38 +17,44 @@
   opacity: 0;
   transition: all .3s;
   margin: 0 auto;
-  display: none;
-  border: 9px solid white; }
+  display: none; }
 
 .classPopUpModelShow {
+  box-shadow: 0px 5px 60px 15px #010101;
   border-radius: 30px;
   opacity: 1;
   display: inline-block; }
 
 .sides {
-  height: 100%;
+  height: 96%;
   display: inline-block;
-  overflow: hidden;
   border-radius: 20px;
-  margin: 10px; }
+  margin: 13px 1px 0 5px; }
 
 .leftSide {
-  width: 35%;
+  overflow: hidden;
+  width: 38%;
   background-image: url(../images/backgrounds/perion2.png);
   background-size: cover; }
 
 .rightSide {
   width: 59.7%;
-  background: white; }
+  height: 97%;
+  background: white;
+  margin-top: -10px;
+  overflow: auto; }
 
 .className {
   color: #790404;
-  padding-top: 10px;
+  padding-top: 510px;
   text-decoration: underline;
   font-size: 45px; }
 
 .model_class_photo {
-  height: 500px; }
+  height: 500px;
+  position: absolute;
+  left: 301px;
+  top: 160px; }
 
 .button {
   background: none;
@@ -65,13 +72,22 @@
   margin: 20px 10px 0 0; }
 
 .skills {
-  border: 2px solid black; }
+  border: 4px solid rgba(128, 128, 128, 0.4);
+  border-radius: 18px;
+  margin: 10px; }
 
 .skillPicture, .skillName {
   display: inline-block; }
 
 .skillName {
   font-size: 35px; }
+
+#x {
+  position: absolute;
+  right: 157px;
+  top: 37px;
+  background-image: url("images/cross-out.png");
+  border: 2px solid white; }
 
 #ms2Logo {
   text-align: center;
@@ -105,7 +121,7 @@
 #greyBox {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 0;
   left: 0;
