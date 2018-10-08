@@ -30,7 +30,10 @@
     box-shadow: 0px 5px 60px 15px #010101;
     border-radius: 30px;
     opacity: 1;
-    display: inline-block
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    height: 80vh;
 }
 
     
@@ -64,18 +67,18 @@
 
     }
 
-    &.rightSide {
-        width: 59.7%;
-        height: 95%;
-        background: white;
-        margin-top: -10px;
-        overflow: auto;
-        // border: 1px solid black;
-        padding: 5px;
-        overflow: hidden;
-    }
+    // &.rightSide {
+    //     width: 59.7%;
+    //     height: 95%;
+    //     background: white;
+    //     margin-top: -10px;
+    //     overflow: auto;
+    //     // border: 1px solid black;
+    //     padding: 5px;
+    //     overflow: hidden;
+    // }
 
-        &.rightTop {
+        &.top {
             border: 2px solid black;
             height: 28%;
             width: 98%;
@@ -86,7 +89,7 @@
         
         }
 
-        .rightBottom {
+        .bottom {
             border: 2px solid black;
             border-radius: 20px;
             width: 98%;

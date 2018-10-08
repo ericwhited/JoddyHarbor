@@ -27,13 +27,13 @@ var greyBox = document.getElementById("greyBox")
 
 // Events
 knight.addEventListener("click", function(){
-    knightModel.classList.toggle("classPopUpModelShow")  
+    knightModel.classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
 })
 
 zerker.addEventListener("click", function(){
-    zerkerModel.classList.toggle("classPopUpModelShow")  
+    zerkerModel.classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
     // document.getElementById("classesBody").classList.toggle('classesBodyShow')
@@ -41,19 +41,19 @@ zerker.addEventListener("click", function(){
 })
 
 priest.addEventListener("click", function(){
-    priestModel.classList.toggle("classPopUpModelShow")  
+    priestModel.classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
 })
 
 wizard.addEventListener("click", function(){
-    wizardModel.classList.toggle("classPopUpModelShow")  
+    wizardModel.classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
 })
 
 ranger.addEventListener("click", function(){
-    rangerModel.classList.toggle("classPopUpModelShow")  
+    rangerModel.classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
 })
