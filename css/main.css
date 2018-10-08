@@ -26,20 +26,20 @@
   display: inline-block; }
 
 .sides {
-  height: 96%;
   display: inline-block;
   border-radius: 20px;
   margin: 13px 1px 0 5px; }
 
 .leftSide {
   overflow: hidden;
+  height: 96%;
   width: 38%;
   background-image: url(../images/backgrounds/perion2.png);
   background-size: cover; }
 
 .rightSide {
   width: 59.7%;
-  height: 97%;
+  height: 28%;
   background: white;
   margin-top: -10px;
   overflow: auto; }
@@ -74,7 +74,9 @@
 .skills {
   border: 4px solid rgba(128, 128, 128, 0.4);
   border-radius: 18px;
-  margin: 10px; }
+  margin: 5px;
+  float: left;
+  width: 30%; }
 
 .skillPicture, .skillName {
   display: inline-block; }

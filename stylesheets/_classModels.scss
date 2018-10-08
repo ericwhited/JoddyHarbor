@@ -35,19 +35,9 @@
     display: inline-block
 }
 
-// #className {
-//     width: 400px;
-//     height: 75px;
-//     border: 3px solid white;
-//     border-radius: 10px;
-//     background: rgba(128, 128, 128, 0.6);
-//     margin: 0 auto;
-
-// }
     
 // insdie model stuff
 .sides {
-    height: 96%;
     display: inline-block;
     border-radius: 20px;
     margin: 13px 1px 0 5px;
@@ -56,6 +46,7 @@
 
 .leftSide {
     overflow: hidden;
+    height: 96%;
     width: 38%;
     background-image: url(../images/backgrounds/perion2.png);
     background-size: cover;
@@ -63,7 +54,8 @@
 
 .rightSide {
     width: 59.7%;
-    height: 97%;
+    height: 28%;
+    // height: 97%;
     background: white;
     margin-top: -10px;
     overflow: auto;
@@ -107,9 +99,10 @@
 
 .skills {
     border: 4px solid rgba(128, 128, 128, 0.4);
-    // box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
     border-radius: 18px;
-    margin: 10px;
+    margin: 5px;
+    float: left;
+    width: 30%;
 }
 
 .skillPicture, .skillName {
