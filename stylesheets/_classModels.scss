@@ -22,8 +22,6 @@
     transition: all .3s;
     margin: 0 auto;
     display: none;
-    // border: 0px 0px 60px 15px #010101
-    
     
 }
 
@@ -41,42 +39,63 @@
     display: inline-block;
     border-radius: 20px;
     margin: 13px 1px 0 5px;
-    
+
+    &.leftSide {
+        overflow: hidden;
+        height: 96%;
+        width: 38%;
+        background-image: url(../images/backgrounds/perion2.png);
+        background-size: cover;
+
+            .model_class_photo {
+                height: 500px;
+                position: absolute;
+                left: 301px;
+                top: 160px;
+            }
+
+            // ex: zerker, priest
+            .className {
+                color: rgb(121, 4, 4);
+                padding-top: 510px;
+                text-decoration: underline;
+                font-size: 45px;
+            }
+
+    }
+
+    &.rightSide {
+        width: 59.7%;
+        height: 95%;
+        background: white;
+        margin-top: -10px;
+        overflow: auto;
+        // border: 1px solid black;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+        &.rightTop {
+            border: 2px solid black;
+            height: 28%;
+            width: 98%;
+            border-radius: 20px;
+            margin-bottom: 20px; 
+            margin-top: 6px;
+            overflow: hidden;
+        
+        }
+
+        .rightBottom {
+            border: 2px solid black;
+            border-radius: 20px;
+            width: 98%;
+            height: 66%;
+            
+        }
 }
 
-.leftSide {
-    overflow: hidden;
-    height: 96%;
-    width: 38%;
-    background-image: url(../images/backgrounds/perion2.png);
-    background-size: cover;
-}
 
-.rightSide {
-    width: 59.7%;
-    height: 28%;
-    // height: 97%;
-    background: white;
-    margin-top: -10px;
-    overflow: auto;
-    // border-left: 4px solid rgba(128, 128, 128, 0.4);
-}
-
-.className {
-    color: rgb(121, 4, 4);
-    padding-top: 510px;
-    text-decoration: underline;
-    font-size: 45px;
-    
-}
-
-
-.model_class_photo {
-    height: 500px;
-    position: absolute;
-    left: 301px;
-    top: 160px;
-}
 
 .button {
     background: none;
@@ -102,7 +121,7 @@
     border-radius: 18px;
     margin: 5px;
     float: left;
-    width: 30%;
+    // width: 20%;
 }
 
 .skillPicture, .skillName {
