@@ -28,19 +28,17 @@
     #modelWrap .classPopUpModel .sides {
       border-radius: 20px;
       margin: 10px; }
-      #modelWrap .classPopUpModel .sides.left {
+      #modelWrap .classPopUpModel .sides#left {
         grid-row: 1/8;
         grid-column: 1/2;
         text-align: center;
-        border: 2px solid black;
-        background-image: url(../images/backgrounds/perion2.png); }
-        #modelWrap .classPopUpModel .sides.left .model_class_photo {
+        border: 2px solid black; }
+        #modelWrap .classPopUpModel .sides#left .model_class_photo {
           height: 500px; }
-        #modelWrap .classPopUpModel .sides.left .className {
-          color: #790404;
+        #modelWrap .classPopUpModel .sides#left .className {
           text-decoration: underline;
           font-size: 45px; }
-        #modelWrap .classPopUpModel .sides.left .button {
+        #modelWrap .classPopUpModel .sides#left .button {
           background: none;
           border: 3px solid white;
           border-radius: 50px;
@@ -51,20 +49,18 @@
           padding: 7px 0 0 0;
           width: 200px;
           margin: 20px 10px 0 0; }
-      #modelWrap .classPopUpModel .sides.top {
+      #modelWrap .classPopUpModel .sides#top {
         border: 2px solid black;
         grid-row: 1/2;
         grid-column: 2/3; }
-        #modelWrap .classPopUpModel .sides.top.top:hover {
-          overflow: auto; }
-        #modelWrap .classPopUpModel .sides.top .skills {
+        #modelWrap .classPopUpModel .sides#top .skills {
           border: 4px solid rgba(128, 128, 128, 0.4);
           border-radius: 18px;
           margin: 5px;
           float: left;
           padding: 4px;
           height: 50px; }
-      #modelWrap .classPopUpModel .sides.bottom {
+      #modelWrap .classPopUpModel .sides#bottom {
         border: 2px solid black;
         grid-row: 2/8;
         grid-column: 2/3;

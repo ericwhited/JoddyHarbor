@@ -27,7 +27,7 @@ var greyBox = document.getElementById("greyBox")
 
 // Events
 knight.addEventListener("click", function(){
-    knightModel.classList.toggle("show")  
+    document.getElementsByClassName("classPopUpModel").classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
 })
@@ -59,27 +59,18 @@ ranger.addEventListener("click", function(){
 })
 
 
-// skill expand
-// var skills = document.getElementsByClassName("skills")
-
-// for(i = 0; i<skills.length; i++) {
-//     // skills[i].style.color = "red"
-//     skills[i].onclick = function() {
-//         skills.style.height = "82%"
-//     }
-// }
 
 // click out and exit model functionality
 document.querySelector('body').addEventListener('click', function(e) {
     if (!e.target.classList.contains('classPhotos') && !hasSomeParentTheClass(e.target, 'classPopUpModel')) {
         knightModel.classList.remove("show")  
-        zerkerModel.classList.remove("show"),
-        priestModel.classList.remove("show"),
-        wizardModel.classList.remove("show"),
-        rangerModel.classList.remove("show"),
-        hgunnerModel.classList.remove("show"),
-        thiefModel.classList.remove("show"),
-        assassinModel.classList.remove("show"),
+        // zerkerModel.classList.remove("show"),
+        // priestModel.classList.remove("show"),
+        // wizardModel.classList.remove("show"),
+        // rangerModel.classList.remove("show"),
+        // hgunnerModel.classList.remove("show"),
+        // thiefModel.classList.remove("show"),
+        // assassinModel.classList.remove("show"),
         document.getElementById('modelWrap').classList.remove('show')
         greyBox.style.visibility = 'hidden';
     }
@@ -128,22 +119,22 @@ function hasSomeParentTheClass(element, classname) {
 
 
 
-var jobs = {
-    knight: {
-        skills: {
-            name: "skill 1",
-            desc: "skill 1 desc",
-            level: "none"
-        }
-    },
-    berserker: {
-        skills: {
-            darkAura: {
-                name: "Dark Aura",
-                description: "Your latent dark power restores 10 spirit every second. Dark Aura stacks on hit, up to once per second, up to 10 times total. Each stack increases the amount restored by an additional 1 spirit.",
-                level: "none"
-            }
-        }
+// var jobs = {
+//     knight: {
+//         skills: {
+//             name: "skill 1",
+//             desc: "skill 1 desc",
+//             level: "none"
+//         }
+//     },
+//     berserker: {
+//         skills: {
+//             darkAura: {
+//                 name: "Dark Aura",
+//                 description: "Your latent dark power restores 10 spirit every second. Dark Aura stacks on hit, up to once per second, up to 10 times total. Each stack increases the amount restored by an additional 1 spirit.",
+//                 level: "none"
+//             }
+//         }
 
-    }
-}
+//     }
+// }
