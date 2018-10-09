@@ -100,29 +100,30 @@ function hasSomeParentTheClass(element, classname) {
 
 
 
-// var priestArr = [];
 
-// class mapleJobs {
+var priestArr = [];
+
+class mapleJobs {
   
-//   constructor (job, skillName, description) {
-//     this.job = job;
-//     this.skillName = skillName;
-//     this.description = description;
-//     window[this.job.toString()+"Arr"].push(this);
-//   }
-// }
+  constructor (job, skillName, description) {
+    this.job = job;
+    this.skillName = skillName;
+    this.description = description;
+    window[this.job.toString()+"Arr"].push(this);
+  }
+}
 
-// var priestSkill1 = new mapleJobs("priest", "holy symbol", "magic stuff");
+var priestSkill1 = new mapleJobs("priest", "holy symbol", "magic stuff");
 
 
-// var priestSkillsButtons = document.getElementsByClassName("priestSkillButtons")
+var priestSkillsButtons = document.getElementsByClassName("priestSkillButtons")
 
-// for(i=0; i<priestSkillButtons.length; i++) {
-//     priestSkillButtons[i].addEventListener('click', function() {
-//         document.getElementsByClass("buttom")
-//     })
-// }
-// console.log(priestArr);
+for(i=0; i<priestSkillButtons.length; i++) {
+    priestSkillButtons[i].addEventListener('click', function() {
+        document.getElementsByClass("buttom")
+    })
+}
+console.log(priestArr);
 
 
 
