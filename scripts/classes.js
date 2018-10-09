@@ -27,13 +27,13 @@ var greyBox = document.getElementById("greyBox")
 
 // Events
 knight.addEventListener("click", function(){
-    knightModel.classList.toggle("classPopUpModelShow")  
+    knightModel.classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
 })
 
 zerker.addEventListener("click", function(){
-    zerkerModel.classList.toggle("classPopUpModelShow")  
+    zerkerModel.classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
     // document.getElementById("classesBody").classList.toggle('classesBodyShow')
@@ -41,45 +41,45 @@ zerker.addEventListener("click", function(){
 })
 
 priest.addEventListener("click", function(){
-    priestModel.classList.toggle("classPopUpModelShow")  
+    priestModel.classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
 })
 
 wizard.addEventListener("click", function(){
-    wizardModel.classList.toggle("classPopUpModelShow")  
+    wizardModel.classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
 })
 
 ranger.addEventListener("click", function(){
-    rangerModel.classList.toggle("classPopUpModelShow")  
+    rangerModel.classList.toggle("show")  
     document.getElementById('modelWrap').classList.toggle('show')
     greyBox.style.visibility = 'visible';
 })
 
 
 // skill expand
-var skills = document.getElementsByClassName("skills")
+// var skills = document.getElementsByClassName("skills")
 
-for(i = 0; i<skills.length; i++) {
-    // skills[i].style.color = "red"
-    skills[i].onclick = function() {
-        skills.style.height = "82%"
-    }
-}
+// for(i = 0; i<skills.length; i++) {
+//     // skills[i].style.color = "red"
+//     skills[i].onclick = function() {
+//         skills.style.height = "82%"
+//     }
+// }
 
 // click out and exit model functionality
 document.querySelector('body').addEventListener('click', function(e) {
     if (!e.target.classList.contains('classPhotos') && !hasSomeParentTheClass(e.target, 'classPopUpModel')) {
-        knightModel.classList.remove("classPopUpModelShow")  
-        zerkerModel.classList.remove("classPopUpModelShow"),
-        priestModel.classList.remove("classPopUpModelShow"),
-        wizardModel.classList.remove("classPopUpModelShow"),
-        rangerModel.classList.remove("classPopUpModelShow"),
-        hgunnerModel.classList.remove("classPopUpModelShow"),
-        thiefModel.classList.remove("classPopUpModelShow"),
-        assassinModel.classList.remove("classPopUpModelShow"),
+        knightModel.classList.remove("show")  
+        zerkerModel.classList.remove("show"),
+        priestModel.classList.remove("show"),
+        wizardModel.classList.remove("show"),
+        rangerModel.classList.remove("show"),
+        hgunnerModel.classList.remove("show"),
+        thiefModel.classList.remove("show"),
+        assassinModel.classList.remove("show"),
         document.getElementById('modelWrap').classList.remove('show')
         greyBox.style.visibility = 'hidden';
     }
@@ -96,4 +96,54 @@ function hasSomeParentTheClass(element, classname) {
 
 
 
-// var modelBefore = document.getElementsByClassName = "classPopUpModelBefore"
+
+
+
+
+// var priestArr = [];
+
+// class mapleJobs {
+  
+//   constructor (job, skillName, description) {
+//     this.job = job;
+//     this.skillName = skillName;
+//     this.description = description;
+//     window[this.job.toString()+"Arr"].push(this);
+//   }
+// }
+
+// var priestSkill1 = new mapleJobs("priest", "holy symbol", "magic stuff");
+
+
+// var priestSkillsButtons = document.getElementsByClassName("priestSkillButtons")
+
+// for(i=0; i<priestSkillButtons.length; i++) {
+//     priestSkillButtons[i].addEventListener('click', function() {
+//         document.getElementsByClass("buttom")
+//     })
+// }
+// console.log(priestArr);
+
+
+
+
+
+var jobs = {
+    knight: {
+        skills: {
+            name: "skill 1",
+            desc: "skill 1 desc",
+            level: "none"
+        }
+    },
+    berserker: {
+        skills: {
+            darkAura: {
+                name: "Dark Aura",
+                description: "Your latent dark power restores 10 spirit every second. Dark Aura stacks on hit, up to once per second, up to 10 times total. Each stack increases the amount restored by an additional 1 spirit.",
+                level: "none"
+            }
+        }
+
+    }
+}
