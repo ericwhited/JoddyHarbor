@@ -22,68 +22,76 @@ var assassinModel = document.getElementById("assassinModel")
 
 // Gray Box to add shadow
 var greyBox = document.getElementById("greyBox")
+var modal = document.getElementById("show")
 
-
+window.onclick = function(event) {
+    if(event.target == greyBox){
+        greyBox.style.display = "none";
+    }
+}
 
 // Events
 knight.addEventListener("click", function(){
-    document.getElementsByClassName("classPopUpModel").classList.toggle("show")  
-    document.getElementById('modelWrap').classList.toggle('show')
-    greyBox.style.visibility = 'visible';
+    // fill code here
+    greyBox.style.display = 'block';
 })
 
 zerker.addEventListener("click", function(){
-    zerkerModel.classList.toggle("show")  
-    document.getElementById('modelWrap').classList.toggle('show')
-    greyBox.style.visibility = 'visible';
-    // document.getElementById("classesBody").classList.toggle('classesBodyShow')
-    // document.getElementById("classesBody").style.background = "linear-gradient(to left, #000 40%";
+    greyBox.style.display = 'block';
 })
 
 priest.addEventListener("click", function(){
-    priestModel.classList.toggle("show")  
-    document.getElementById('modelWrap').classList.toggle('show')
-    greyBox.style.visibility = 'visible';
+    greyBox.style.display = 'block';
 })
 
 wizard.addEventListener("click", function(){
-    wizardModel.classList.toggle("show")  
-    document.getElementById('modelWrap').classList.toggle('show')
-    greyBox.style.visibility = 'visible';
+    greyBox.style.display = 'block';
 })
 
 ranger.addEventListener("click", function(){
-    rangerModel.classList.toggle("show")  
-    document.getElementById('modelWrap').classList.toggle('show')
-    greyBox.style.visibility = 'visible';
+    greyBox.style.display = 'block';
+})
+
+hgunner.addEventListener("click", function(){
+    greyBox.style.display = 'block';
+})
+
+thief.addEventListener("click", function(){
+    greyBox.style.display = 'block';
+})
+
+assassin.addEventListener("click", function(){
+    greyBox.style.display = 'block';
 })
 
 
 
-// click out and exit model functionality
-document.querySelector('body').addEventListener('click', function(e) {
-    if (!e.target.classList.contains('classPhotos') && !hasSomeParentTheClass(e.target, 'classPopUpModel')) {
-        knightModel.classList.remove("show")  
-        // zerkerModel.classList.remove("show"),
-        // priestModel.classList.remove("show"),
-        // wizardModel.classList.remove("show"),
-        // rangerModel.classList.remove("show"),
-        // hgunnerModel.classList.remove("show"),
-        // thiefModel.classList.remove("show"),
-        // assassinModel.classList.remove("show"),
-        document.getElementById('modelWrap').classList.remove('show')
-        greyBox.style.visibility = 'hidden';
-    }
-})
+
+// document.querySelector('body').onclick = function() {
+//     document.getElementById("show").id = "classPopUpModel"
+// }
 
 
 
 // click out and exit model functionality
-function hasSomeParentTheClass(element, classname) {
-    // 
-    if (element.className && element.className.split(' ').indexOf(classname)>=0) return true;
-    return element.parentNode && hasSomeParentTheClass(element.parentNode, classname);
-}
+// document.querySelector('body').addEventListener('click', function(e) {
+//     if (!e.target.classList.contains('classPhotos') && !hasSomeParentTheClass(e.target, 'classPopUpModel')) {
+//         document.getElementById("show").id = "classPopUpModel"
+//         greyBox.style.visibility = 'hidden';
+//     }
+// })
+
+
+
+
+
+
+// // click out and exit model functionality
+// function hasSomeParentTheClass(element, classname) {
+//     // 
+//     if (element.className && element.className.split(' ').indexOf(classname)>=0) return true;
+//     return element.parentNode && hasSomeParentTheClass(element.parentNode, classname);
+// }
 
 
 
