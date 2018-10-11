@@ -5,7 +5,7 @@ var knight = document.getElementById("knightLink")
 var zerker = document.getElementById("zerkerLink")
 var priest = document.getElementById("priestLink")
 var wizard = document.getElementById("wizardLink")
-var ranger = document.getElementById("rangerLink")
+var archer = document.getElementById("archerLink")
 var hgunner = document.getElementById("hgunnerLink")
 var thief = document.getElementById("thiefLink")
 var assassin = document.getElementById("assassinLink")
@@ -33,16 +33,15 @@ window.onclick = function(event) {
 // Events
 knight.addEventListener("click", function(){
     // background change (region)
-    leftBackground.backgroundImage = "url('images/backgrounds/perion.jpg')"
+    leftBackground.backgroundImage = jobs.knight.region
     // job photo
-    jobPhoto.src = 'images/knight/Knight.png'
+    jobPhoto.src = jobs.knight.photo
     // job name
     jobName.innerHTML = "Knight"
     // background shade behind
     greyBox.style.display = 'block';
     // skill area
     // insert skills into top box
-    document.getElementById("top").after('<div>Hello</div>')
 })
 
 
@@ -51,44 +50,111 @@ knight.addEventListener("click", function(){
 
 
 zerker.addEventListener("click", function(){
-    // background (region)
-    document.getElementById("left").style.backgroundImage = "url('images/backgrounds/perion.jpg')"
+    // background change (region)
+    leftBackground.backgroundImage = jobs.berserker.region
     // job photo
-
+    jobPhoto.src = jobs.berserker.photo
     // job name
+    jobName.innerHTML = jobs.berserker.name
+    // background shade behind
     greyBox.style.display = 'block';
+    // skill area
+    // insert skills into top box
 })
 
 priest.addEventListener("click", function(){
+    // background change (region)
+    leftBackground.backgroundImage = jobs.priest.region
+    // job photo
+    jobPhoto.src = jobs.priest.photo
+    // job name
+    jobName.innerHTML = jobs.priest.name
+    // background shade behind
     greyBox.style.display = 'block';
+    // skill area
+    // insert skills into top box
 })
 
 wizard.addEventListener("click", function(){
+    // background change (region)
+    leftBackground.backgroundImage = jobs.wizard.region
+    // job photo
+    jobPhoto.src = jobs.wizard.photo
+    // job name
+    jobName.innerHTML = jobs.wizard.name
+    // background shade behind
     greyBox.style.display = 'block';
+    // skill area
+    // insert skills into top box
 })
 
-ranger.addEventListener("click", function(){
+archer.addEventListener("click", function(){
+    // background change (region)
+    leftBackground.backgroundImage = jobs.archer.region
+    // job photo
+    jobPhoto.src = jobs.archer.photo
+    // job name
+    jobName.innerHTML = jobs.archer.name
+    // background shade behind
     greyBox.style.display = 'block';
+    // skill area
+    // insert skills into top box
 })
 
 hgunner.addEventListener("click", function(){
+    // background change (region)
+    leftBackground.backgroundImage = jobs.heavyGunner.region
+    // job photo
+    jobPhoto.src = jobs.heavyGunner.photo
+    // job name
+    jobName.innerHTML = jobs.heavyGunner.name
+    // background shade behind
     greyBox.style.display = 'block';
+    // skill area
+    // insert skills into top box
 })
 
 thief.addEventListener("click", function(){
+    // background change (region)
+    leftBackground.backgroundImage = jobs.thief.region
+    // job photo
+    jobPhoto.src = jobs.thief.photo
+    // job name
+    jobName.innerHTML = jobs.thief.name
+    // background shade behind
     greyBox.style.display = 'block';
+    // skill area
+    // insert skills into top box
 })
 
 assassin.addEventListener("click", function(){
+    // background change (region)
+    leftBackground.backgroundImage = jobs.assassin.region
+    // job photo
+    jobPhoto.src = jobs.assassin.photo
+    // job name
+    jobName.innerHTML = jobs.assassin.name
+    // background shade behind
     greyBox.style.display = 'block';
+    // skill area
+    // insert skills into top box
 })
 
 
 var jobs = {
+    knight: {
+        name: "Knight",
+        photo: "images/knight/Knight.png",
+        region: "url('images/backgrounds/perion.jpg')",
+        skills: [
+
+        ]
+    },
+
     berserker: {
         name: "Berserker",
-        photo: "place holder (photo)",
-        region: "images/zerker/zerker.png",
+        photo: "images/zerker/zerker.png",
+        region: "url('images/backgrounds/perion.jpg')",
         skills: [
             darkAura = {
                 name: "Dark Aura",
@@ -185,62 +251,98 @@ var jobs = {
                 skill_photo: "",
                 description: "Thrust your darkened greatsword into 2 enemies up to 3 m in front of you, then pull it out to deal 129% (210%) damage 2 times. The stab attack is always a critical, and pulling the sword out steals health from the enemy, restoring 7% (43%) of your max health. In PvP zones, the amount restored is halved." 
             },
+
+            darkBreaker = {
+                name: "Dark Breaker",
+                level_requirements: "Level 22",
+                skill_requirements: "Raging Slash [Level 4+], Void Slash [Level 3+]",
+                type: "Active",
+                additional_types: "Dark, Close Range, Physical",
+                weapon_requirements: "Two-handed Greatsword",
+                cooldown: "None",
+                skill_photo: "",
+                description: "Gather dark power into your greatsword and strike down with great force to deal 357% (582%) dark damage to 8 enemies within 3 m. The impact area resonates with darkness for 5 sec, dealing 148% (238%) dark damage to 8 enemies in range every second. This skill can only be used by consuming Dark Aura at max stacks. You will be immune to knockback while this skill is active." 
+            },
+
+            intimidation = {
+                name: "Intimidation",
+                level_requirements: "Level 28",
+                skill_requirements: "Greatsword Mastery",
+                type: "Active",
+                additional_types: "Close Range, Physical",
+                weapon_requirements: "None",
+                cooldown: "16 Seconds",
+                skill_photo: "",
+                description: "Overwhelm enemies with a show of force, dealing 121% (193%) damage to 5 enemies within 3 m. Enemies lost the will to fight, reducing their physical attack and magic attack by 9% (36%) and their movement speed and jump power by 9% (36%) for 4 sec. When at max stacks, Dark Aura is consumed to trigger a more powerful version of this skill. Some powerful enemies are immune." 
+            },
+
+            bloodPrice = {
+                name: "Blood Price",
+                level_requirements: "Level 31",
+                skill_requirements: "Bloodlust [Level 6+], Adrenaline Rush [Level 2+]",
+                type: "Active",
+                additional_types: "Close Range, Physical",
+                weapon_requirements: "None",
+                cooldown: "16 Seconds",
+                skill_photo: "",
+                description: "Overwhelm enemies with a show of force, dealing 121% (193%) damage to 5 enemies within 3 m. Enemies lost the will to fight, reducing their physical attack and magic attack by 9% (36%) and their movement speed and jump power by 9% (36%) for 4 sec. When at max stacks, Dark Aura is consumed to trigger a more powerful version of this skill. Some powerful enemies are immune." 
+            },
         ]
-    }
-    // next job object
+    },
+
+    priest: {
+        name: "Priest",
+        photo: "images/priest/Priest.png",
+        region: "url('images/backgrounds/ellinia.png')",
+        skills: [
+
+        ]
+    },
+
+    wizard: {
+        name: "Wizard",
+        photo: "images/wizard/Wizard.png",
+        region: "url('images/backgrounds/ellinia.png')",
+        skills: [
+
+        ]
+    },
+
+    archer: {
+        name: "Archer",
+        photo: "images/archer/Archer.png",
+        region: "url('images/backgrounds/hene.jpg')",
+        skills: [
+
+        ]
+    },
+
+    heavyGunner: {
+        name: "Heavy Gunner",
+        photo: "images/heavyGunner/HeavyGunner.png",
+        region: "url('images/backgrounds/hene.jpg')",
+        skills: [
+
+        ]
+    },
+
+    thief: {
+        name: "Thief",
+        photo: "images/thief/Thief.png",
+        region: "url('images/backgrounds/kern.jpg')",
+        skills: [
+
+        ]
+    },
+
+    assassin: {
+        name: "Assassin",
+        photo: "images/assassin/Assassin.png",
+        region: "url('images/backgrounds/kern.jpg')",
+        skills: [
+
+        ]
+    },
+
 }
-
-
-
-// var priestArr = [];
-
-// class mapleJobs {
-  
-//   constructor (job, skillName, description) {
-//     this.job = job;
-//     this.skillName = skillName;
-//     this.description = description;
-//     window[this.job.toString()+"Arr"].push(this);
-//   }
-// }
-
-// var darkAura = new mapleJobs("Berserker", "Dark Aura", "magic stuff");
-// var spin = new mapleJobs("Berserker", "Spin", "Spin2Win");
-
-
-// var priestSkillsButtons = document.getElementsByClassName("priestSkillButtons")
-
-// for(i=0; i<priestSkillButtons.length; i++) {
-//     priestSkillButtons[i].addEventListener('click', function() {
-//         document.getElementsByClass("buttom")
-//     })
-// }
-// console.log(priestArr);
-
-
-
-
-
-// var jobs = {
-//     knight: {
-//         skills: {
-//             name: "skill 1",
-//             desc: "skill 1 desc",
-//             level: "none"
-//         }
-//     },
-//     berserker: {
-//         skills: {
-//             darkAura: {
-//                 name: "Dark Aura",
-//                 description: "Your latent dark power restores 10 spirit every second. Dark Aura stacks on hit, up to once per second, up to 10 times total. Each stack increases the amount restored by an additional 1 spirit.",
-//                 level: "none"
-//             }
-//         }
-
-//     }
-// }
-
-
-
 

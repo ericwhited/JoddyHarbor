@@ -26,7 +26,9 @@
   grid-row: 1/8;
   grid-column: 1/2;
   text-align: center;
-  border: 2px solid black; }
+  border: 2px solid black;
+  width: 470px;
+  background-size: cover; }
 
 #top {
   border: 2px solid black;
@@ -40,10 +42,11 @@
   margin-top: 10px; }
 
 #jobPhoto {
-  height: 500px; }
+  height: 500px;
+  margin-top: 20px; }
 
 .button {
-  background: none;
+  background: rgba(0, 0, 0, 0.5);
   border: 3px solid white;
   border-radius: 50px;
   color: white;
@@ -55,7 +58,13 @@
   margin: 20px 10px 0 0; }
 
 #jobName {
-  text-decoration: underline;
-  font-size: 45px; }
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 35px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4px; }
 
 /*# sourceMappingURL=classModels3.css.map */
