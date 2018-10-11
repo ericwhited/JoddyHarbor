@@ -1,0 +1,92 @@
+#classPopUpModel {
+    // opacity: 0;
+    // transition: all .2s;
+    // display: none;
+    
+}
+
+#show {
+    
+    box-shadow: 0px 5px 60px 15px #010101;
+    border-radius: 30px;
+    opacity: 1;
+    // grid stuff
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
+    // grid-gap: 10px;
+    border: 2px solid black;
+    z-index: 10;
+    height: 700px;
+    width: 1400px;
+    background: white;
+    // opacity: 0;
+    transition: all .4s;
+    margin: 0 auto;
+    // display: none;
+    padding: 5px;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    righT: 0;
+    // visibility: hidden;
+    
+}
+
+.sides {
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#left {
+    grid-row: 1/8;
+    grid-column: 1/2;
+    text-align: center;
+    border: 2px solid black;
+    width: 470px;
+    background-size: cover;
+}
+
+#top {
+    border: 2px solid black;
+    grid-row: 1/2;
+    grid-column: 2/3; 
+}
+
+#bottom {
+    border: 2px solid black;
+    grid-row: 2/8;
+    grid-column: 2/3;
+    margin-top: 10px;
+}
+
+#jobPhoto {
+    height: 500px;
+    margin-top: 20px;
+}
+
+.button {
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid white;
+    border-radius: 50px;
+    color: white;
+    display: inline-block;
+    font-size: 35px;
+    height: 50px;
+    // margin: 0 auto;  
+    padding: 7px 0 0 0;
+    width: 200px;
+    margin: 20px 10px 0 0;
+}
+
+#jobName {
+    // text-decoration: underline;
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 35px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 4px;
+}

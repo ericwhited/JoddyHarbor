@@ -1,4 +1,4 @@
-@import 'classModels2';
+@import 'classModels3';
 
 #ms2Logo {
     text-align: center;
@@ -51,9 +51,9 @@
     // top: -59px;
     top: 0;
     left: 0;
-    z-index: -1;
-    visibility: hidden;
-    // display: inline-block;
+    // z-index: -1;
+    // visibility: hidden;
+    display: none;
 }
 
 
