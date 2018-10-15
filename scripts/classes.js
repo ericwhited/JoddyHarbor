@@ -66,6 +66,15 @@ skillsButton.onclick = function() {
     video.style.visibility = "hidden";
 }
 
+// skill highlight function
+function clicked(event) {
+    for(i=0; i<skillPhoto.length; i++) {
+        skillPhoto[i].style.background = "none"
+    }
+    event.target.style.background = "rgba(0, 0, 0, 0.3)";
+    console.log(event.target);
+}
+
 
 // Events
 knight.addEventListener("click", function(){
@@ -76,7 +85,8 @@ knight.addEventListener("click", function(){
 
     // makes the first skill display on click
     descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[0].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[0].description+'</p>'
-
+    
+    
     // add skill photos
     for(let i=0; i<jobs.knight.skills.length; i++){
         // creating img
@@ -90,10 +100,12 @@ knight.addEventListener("click", function(){
         // click an image to change the inside of the bottom box to the skill desscription
         skillImage.addEventListener('click', function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[i].description+'</p>'
-            // skillPhoto[i].style.background = "red"
-            alert(target.nodeName)
+        })
+        skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
+    }
 
-        }) 
+    for(r=0; r<skillPhoto.length; r++){
+        skillPhoto[r].addEventListener('click', clicked)
     }
 
     // changing video source
@@ -116,6 +128,10 @@ zerker.addEventListener("click", function(){
         skillBox.removeChild(skillBox.firstChild);
     }
 
+     // makes the first skill display on click
+     descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[0].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[0].description+'</p>'
+
+
     // add skill photos
     for(let i=0; i<jobs.berserker.skills.length; i++){
         // creating img
@@ -129,7 +145,12 @@ zerker.addEventListener("click", function(){
         // click an image to change the inside of the bottom box to the skill desscription
         skillImage.addEventListener('click', function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.berserker.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.berserker.skills[i].description+'</p>'
-        }) 
+        })
+        skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
+    }
+
+    for(r=0; r<skillPhoto.length; r++){
+        skillPhoto[r].addEventListener('click', clicked)
     }
 
     // changing video source
@@ -144,11 +165,6 @@ zerker.addEventListener("click", function(){
     greyBox.style.display = 'block';
     // skill area
 
-    // for(let i=0; i<skillBox.length; i++){
-    //     skillBox[i].addEventListener('click', function(){
-    //         console.log("Hello" + i.toString());
-    //     })
-    // }
 })
 
 priest.addEventListener("click", function(){
@@ -156,6 +172,10 @@ priest.addEventListener("click", function(){
     while(skillBox.firstChild){
         skillBox.removeChild(skillBox.firstChild);
     }
+
+     // makes the first skill display on click
+     descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[0].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[0].description+'</p>'
+
 
     // add skill photos
     for(let i=0; i<jobs.knight.skills.length; i++){
@@ -171,7 +191,13 @@ priest.addEventListener("click", function(){
         skillImage.addEventListener('click', function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.priest.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.priest.skills[i].description+'</p>'
         }) 
+        skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
     }
+
+    for(r=0; r<skillPhoto.length; r++){
+        skillPhoto[r].addEventListener('click', clicked)
+    }
+    
 
     // background change (region)
     leftBackground.backgroundImage = jobs.priest.region
@@ -191,6 +217,10 @@ wizard.addEventListener("click", function(){
         skillBox.removeChild(skillBox.firstChild);
     }
 
+     // makes the first skill display on click
+     descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[0].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[0].description+'</p>'
+
+
     for(let i=0; i<jobs.wizard.skills.length; i++){
         // creating img
         var skillImage = document.createElement("img");
@@ -204,6 +234,11 @@ wizard.addEventListener("click", function(){
         skillImage.addEventListener('click', function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.wizard.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.wizard.skills[i].description+'</p>'
         }) 
+        skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
+    }
+
+    for(r=0; r<skillPhoto.length; r++){
+        skillPhoto[r].addEventListener('click', clicked)
     }
 
     // background change (region)
@@ -224,6 +259,10 @@ archer.addEventListener("click", function(){
         skillBox.removeChild(skillBox.firstChild);
     }
 
+     // makes the first skill display on click
+     descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[0].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[0].description+'</p>'
+    
+
     for(let i=0; i<jobs.archer.skills.length; i++){
         // creating img
         var skillImage = document.createElement("img");
@@ -237,6 +276,11 @@ archer.addEventListener("click", function(){
         skillImage.addEventListener('click', function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.archer.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.archer.skills[i].description+'</p>'
         }) 
+        skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
+    }
+
+    for(r=0; r<skillPhoto.length; r++){
+        skillPhoto[r].addEventListener('click', clicked)
     }
 
     // background change (region)
@@ -257,6 +301,10 @@ hgunner.addEventListener("click", function(){
         skillBox.removeChild(skillBox.firstChild);
     }
 
+     // makes the first skill display on click
+     descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[0].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[0].description+'</p>'
+
+
     for(let i=0; i<jobs.archer.skills.length; i++){
         // creating img
         var skillImage = document.createElement("img");
@@ -270,6 +318,11 @@ hgunner.addEventListener("click", function(){
         skillImage.addEventListener('click', function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.heavyGunner.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.heavyGunner.skills[i].description+'</p>'
         }) 
+        skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
+    }
+
+    for(r=0; r<skillPhoto.length; r++){
+        skillPhoto[r].addEventListener('click', clicked)
     }
 
     // background change (region)
@@ -290,6 +343,10 @@ thief.addEventListener("click", function(){
         skillBox.removeChild(skillBox.firstChild);
     }
 
+     // makes the first skill display on click
+     descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[0].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[0].description+'</p>'
+
+
     for(let i=0; i<jobs.thief.skills.length; i++){
         // creating img
         var skillImage = document.createElement("img");
@@ -303,6 +360,11 @@ thief.addEventListener("click", function(){
         skillImage.addEventListener('click', function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.thief.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.thief.skills[i].description+'</p>'
         }) 
+        skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
+    }
+
+    for(r=0; r<skillPhoto.length; r++){
+        skillPhoto[r].addEventListener('click', clicked)
     }
 
     // background change (region)
@@ -323,6 +385,10 @@ assassin.addEventListener("click", function(){
         skillBox.removeChild(skillBox.firstChild);
     }
 
+     // makes the first skill display on click
+     descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[0].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[0].description+'</p>'
+
+
     for(let i=0; i<jobs.assassin.skills.length; i++){
         // creating img
         var skillImage = document.createElement("img");
@@ -336,6 +402,11 @@ assassin.addEventListener("click", function(){
         skillImage.addEventListener('click', function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.assassin.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.assassin.skills[i].description+'</p>'
         }) 
+        skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
+    }
+
+    for(r=0; r<skillPhoto.length; r++){
+        skillPhoto[r].addEventListener('click', clicked)
     }
 
     // background change (region)
