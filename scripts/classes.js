@@ -29,7 +29,8 @@ var videoButton = document.getElementById("videoButton")
 // video div
 
 // skills button
-document.getElementById("skillsButton")
+// document.getElementById("skillsButton")
+var skillPhoto = document.getElementsByClassName("skillPhoto");
 
 
 
@@ -46,32 +47,35 @@ window.onclick = function(event) {
         // resets the model. shows the skills 
         video.style.visibility = "hidden";
         skillBox.style.visibility = "visible";
-        descriptionBox.style.visibility = "visible"
+        descriptionBox.style.visibility = "visible";
     }
 }
 
 
-// video
+// shows video
 videoButton.onclick = function() {
-    skillBox.style.visibility = "hidden"
-    descriptionBox.style.visibility = "hidden"
-    video.style.visibility = "visible"
+    skillBox.style.visibility = "hidden";
+    descriptionBox.style.visibility = "hidden";
+    video.style.visibility = "visible";
 }
 
-// show skills
+// shows skills
 skillsButton.onclick = function() {
-    skillBox.style.visibility = "visible"
-    descriptionBox.style.visibility = "visible"
-    video.style.visibility = "hidden"
+    skillBox.style.visibility = "visible";
+    descriptionBox.style.visibility = "visible";
+    video.style.visibility = "hidden";
 }
 
 
 // Events
 knight.addEventListener("click", function(){
-    // reset div
+    // reset div by getting rid of all the skills
     while(skillBox.firstChild){
         skillBox.removeChild(skillBox.firstChild);
     }
+
+    // makes the first skill display on click
+    descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[0].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[0].description+'</p>'
 
     // add skill photos
     for(let i=0; i<jobs.knight.skills.length; i++){
@@ -86,6 +90,9 @@ knight.addEventListener("click", function(){
         // click an image to change the inside of the bottom box to the skill desscription
         skillImage.addEventListener('click', function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[i].description+'</p>'
+            // skillPhoto[i].style.background = "red"
+            alert(target.nodeName)
+
         }) 
     }
 
