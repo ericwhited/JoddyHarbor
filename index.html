@@ -3,22 +3,106 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>MapleGlory.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/MSLeaf.png"/>
 </head>
-<body id="menuPage">
+<body id="classesBody">
+
+        
+    <!-- logo -->
+    <header id="classesHeader">
+        <a href="menu.html">
+            <img id="ms2Logo" src="images/logo.png" alt="logo">
+        </a>
+    </header>
+
+    <!-- class picker -->
+    <main id ="classPicker">
+
+        <a id="knightLink" href="#">
+          <img id="knight" class="classPhotos" src="./images/allClasses/knightMini.png" alt="knight">
+        </a>
+        
+
+        <a id="zerkerLink" href="#">
+            <img id="Zerker" class="classPhotos" src="./images/allClasses/zerkerMini.png" alt="zerker">
+        </a>
+        
+        <a id="priestLink" href="#">
+                <img id="preist" class="classPhotos" src="./images/allClasses/priestMini.png" alt="preist">
+            </a>
+
+        <a id="wizardLink" href="#">
+            <img id="wizard" class="classPhotos" src="./images/allClasses/wizardMini.png" alt="wizard">
+        </a>
+
+        <a id="archerLink" href="#">
+            <img id="archer" class="classPhotos" src="./images/allClasses/archerMini.png" alt="ranger">
+        </a>
+
+        <a id="hgunnerLink" href="#">
+                <img id="HGunner" class="classPhotos" src="./images/allClasses/HGunnerMini.png" alt="HGunner">
+        </a>
+
+        <a id="thiefLink" href="#">
+                <img id="thief" class="classPhotos" src="./images/allClasses/thiefMini.png" alt="thief">
+        </a>
+
+        <a id="assassinLink" href="#">
+                <img id="assassin" class="classPhotos" src="./images/allClasses/AssassinMini.png" alt="assassin">
+        </a>
+
+
+            
+    </main>
+
     
-    <p id="menuSkills">Skills</p>
-    <div id="leftSide" class="box">
-        <div id="menuSkillz"></div>
-        <iframe id="videoBkgd" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/TuO3HJ5z0W0?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- 
+        <div id="show"> 
+                <div id="left" class="sides">
+
+                </div>
+                <div id="top" class="sides"></div>
+                <div id="bottom" class="sides"></div>
+        </div>         -->
+
+
+    <div id="greyBox">
+        <img id="X" src="images/cross-out.png" alt="">
+        <div id="show"> 
+                <div id="left" class="sides">
+                    
+                    <button id="skillsButton" class="button">Skills</button>
+                    <button id="videoButton" class="button">Video</button> 
+
+                    <img id="jobPhoto"> 
+
+                    <p id="jobName">class name</p>
+
+                </div>
+
+                <div id="top" class="sides"></div>
+
+                <div id="bottom" class="sides"></div>
+
+                <div id="video" class="sides">
+                    <!-- <video id="jobsVideo" src=""></video> -->
+                    <iframe id="jobsVideo" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+        </div> 
     </div>
 
-    <div id="rightSide" class="box">
-        <div id="menuGames" class="menuOptions">Games</div>
-    </div>
-
-    <script src="scripts/menu.js"></script>
+    <script src="scripts/jobs.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
+
+
+
+
+
