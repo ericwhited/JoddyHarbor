@@ -32,6 +32,8 @@ var videoButton = document.getElementById("videoButton")
 // document.getElementById("skillsButton")
 var skillPhoto = document.getElementsByClassName("skillPhoto");
 
+var show = document.getElementById("show")
+
 
 
 // Gray Box to add shadow
@@ -43,11 +45,13 @@ var greyBox = document.getElementById("greyBox")
 window.onclick = function(event) {
     if(event.target == greyBox){
         // gets ride of grey box
-        greyBox.style.display = "none";
+        greyBox.style.visibility = "hidden";
         // resets the model. shows the skills 
         video.style.visibility = "hidden";
         skillBox.style.visibility = "visible";
         descriptionBox.style.visibility = "visible";
+        show.style.opacity = 0;
+        show.style.zIndex = -1
     }
 }
 
@@ -72,7 +76,7 @@ function clicked(event) {
         skillPhoto[i].style.background = "none"
     }
     event.target.style.background = "rgba(0, 0, 0, 0.3)";
-    console.log(event.target);
+    // event.target.style.border = "none";
 }
 
 
@@ -101,6 +105,7 @@ knight.addEventListener("click", function(){
         skillImage.addEventListener('click', function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.knight.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.knight.skills[i].description+'</p>'
         })
+        // default first skill has grey background
         skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
     }
 
@@ -117,9 +122,9 @@ knight.addEventListener("click", function(){
     // job name
     jobName.innerHTML = "Knight"
     // background shade behind
-    greyBox.style.display = 'block';
-    // skill area
-    // insert skills into top box
+    greyBox.style.visibility = "visible"
+    show.style.opacity = 1;
+    show.style.zIndex = 1;
 })
 
 zerker.addEventListener("click", function(){
@@ -162,8 +167,9 @@ zerker.addEventListener("click", function(){
     // job name
     jobName.innerHTML = jobs.berserker.name
     // background shade behind
-    greyBox.style.display = 'block';
-    // skill area
+    greyBox.style.visibility = "visible"
+    show.style.opacity = 1
+    show.style.zIndex = 1;
 
 })
 
@@ -206,9 +212,9 @@ priest.addEventListener("click", function(){
     // job name
     jobName.innerHTML = jobs.priest.name
     // background shade behind
-    greyBox.style.display = 'block';
-    // skill area
-    // insert skills into top box
+    greyBox.style.visibility = "visible"
+    show.style.opacity = 1
+    show.style.zIndex = 1;
 })
 
 wizard.addEventListener("click", function(){
@@ -249,8 +255,9 @@ wizard.addEventListener("click", function(){
     jobName.innerHTML = jobs.wizard.name
     // background shade behind
     greyBox.style.display = 'block';
-    // skill area
-    // insert skills into top box
+    greyBox.style.visibility = "visible";
+    show.style.opacity = 1;
+    show.style.zIndex = 1;
 })
 
 archer.addEventListener("click", function(){
@@ -291,8 +298,9 @@ archer.addEventListener("click", function(){
     jobName.innerHTML = jobs.archer.name
     // background shade behind
     greyBox.style.display = 'block';
-    // skill area
-    // insert skills into top box
+    greyBox.style.visibility = "visible";
+    show.style.opacity = 1;
+    show.style.zIndex = 1;
 })
 
 hgunner.addEventListener("click", function(){
@@ -333,8 +341,9 @@ hgunner.addEventListener("click", function(){
     jobName.innerHTML = jobs.heavyGunner.name
     // background shade behind
     greyBox.style.display = 'block';
-    // skill area
-    // insert skills into top box
+    greyBox.style.visibility = "visible";
+    show.style.opacity = 1;
+    show.style.zIndex = 1;
 })
 
 thief.addEventListener("click", function(){
@@ -361,6 +370,7 @@ thief.addEventListener("click", function(){
             descriptionBox.innerHTML = '<h1 class="skillName">'+jobs.thief.skills[i].name+'</h1>' + '<p class="skillDescription">'+jobs.thief.skills[i].description+'</p>'
         }) 
         skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
+        
     }
 
     for(r=0; r<skillPhoto.length; r++){
@@ -375,8 +385,9 @@ thief.addEventListener("click", function(){
     jobName.innerHTML = jobs.thief.name
     // background shade behind
     greyBox.style.display = 'block';
-    // skill area
-    // insert skills into top box
+    greyBox.style.visibility = "visible";
+    show.style.opacity = 1;
+    show.style.zIndex = 1;
 })
 
 assassin.addEventListener("click", function(){
@@ -417,8 +428,9 @@ assassin.addEventListener("click", function(){
     jobName.innerHTML = jobs.assassin.name
     // background shade behind
     greyBox.style.display = 'block';
-    // skill area
-    // insert skills into top box
+    greyBox.style.visibility = "visible";
+    show.style.opacity = 1;
+    show.style.zIndex = 1;
 })
 
 
