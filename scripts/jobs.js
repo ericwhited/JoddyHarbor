@@ -134,89 +134,89 @@ var jobs = {
                 description: "Swing your weapon to deal 56% (83%) dark damage to 5 enemies up to 3 m in front of you. Keep pressing the key to trigger a 3-hit combo. The attack speed increases with each hit. The third hit is a double strike, and when finished you start over from the beginning. During the attack, press a direction key to move 0.6 m." 
             },
 
-            voidSlash = {
-                name: "Void Slash",
-                level_requirements: "Level 10",
-                skill_requirements: "None",
-                type: "Active",
-                additional_types: "Dark, Close Range, Physical",
-                weapon_requirements: "Two-handed Greatsword",
-                cooldown: "none",
-                skill_photo: "",
-                description: "Swing your greatsword upward to deal 257% (410%) dark damage to 5 enemies up to 3 m in front of you. Press the skill key again to trigger a 2-hit combo. The second part is two quick swings, dealing 97% (151%) dark damage 2 times to 5 enemies up to 2 m in front of you. On the first hit, press a direction key to move 4 m and attack. On the secnod hit, the skill lasts while the skill key is held down. You will be immune to knockback while this skill is active. The first hit consumes 24 spirit and the second hit consumes 1 spirit." 
-            },
+            // voidSlash = {
+            //     name: "Void Slash",
+            //     level_requirements: "Level 10",
+            //     skill_requirements: "None",
+            //     type: "Active",
+            //     additional_types: "Dark, Close Range, Physical",
+            //     weapon_requirements: "Two-handed Greatsword",
+            //     cooldown: "none",
+            //     skill_photo: "",
+            //     description: "Swing your greatsword upward to deal 257% (410%) dark damage to 5 enemies up to 3 m in front of you. Press the skill key again to trigger a 2-hit combo. The second part is two quick swings, dealing 97% (151%) dark damage 2 times to 5 enemies up to 2 m in front of you. On the first hit, press a direction key to move 4 m and attack. On the secnod hit, the skill lasts while the skill key is held down. You will be immune to knockback while this skill is active. The first hit consumes 24 spirit and the second hit consumes 1 spirit." 
+            // },
 
-            bloodLust = {
-                name: "Blood Lust",
-                level_requirements: "Level 13",
-                skill_requirements: "Raging Slash [Level 2+]",
-                type: "Active",
-                additional_types: "Dark, Close Range, Physical",
-                weapon_requirements: "Two-handed Greatsword",
-                cooldown: "8 seconds",
-                skill_photo: "",
-                description: "Thrust your darkened greatsword into 2 enemies up to 3 m in front of you, then pull it out to deal 129% (210%) damage 2 times. The stab attack is always a critical, and pulling the sword out steals health from the enemy, restoring 7% (43%) of your max health. In PvP zones, the amount restored is halved." 
-            },
+            // bloodLust = {
+            //     name: "Blood Lust",
+            //     level_requirements: "Level 13",
+            //     skill_requirements: "Raging Slash [Level 2+]",
+            //     type: "Active",
+            //     additional_types: "Dark, Close Range, Physical",
+            //     weapon_requirements: "Two-handed Greatsword",
+            //     cooldown: "8 seconds",
+            //     skill_photo: "",
+            //     description: "Thrust your darkened greatsword into 2 enemies up to 3 m in front of you, then pull it out to deal 129% (210%) damage 2 times. The stab attack is always a critical, and pulling the sword out steals health from the enemy, restoring 7% (43%) of your max health. In PvP zones, the amount restored is halved." 
+            // },
 
-            greatswordMastery = {
-                name: "Greatsword Mastery",
-                "level requirements": "Level 16",
-                skill_requirements: "Raging Slash [Level 3+]",
-                type: "Passive",
-                additional_types: "None",
-                weapon_requirements: "None",
-                cooldown: "None",
-                skill_photo: "",
-                description: "Ten's lessons on asceticism increase your skill with a greatsword. Your weapon attack increases by 1% (6.4%) when you have a greatsword equipped." 
-            },
+            // greatswordMastery = {
+            //     name: "Greatsword Mastery",
+            //     "level requirements": "Level 16",
+            //     skill_requirements: "Raging Slash [Level 3+]",
+            //     type: "Passive",
+            //     additional_types: "None",
+            //     weapon_requirements: "None",
+            //     cooldown: "None",
+            //     skill_photo: "",
+            //     description: "Ten's lessons on asceticism increase your skill with a greatsword. Your weapon attack increases by 1% (6.4%) when you have a greatsword equipped." 
+            // },
 
-            groundBreaker = {
-                name: "Ground Breaker",
-                level_requirements: "Level 19",
-                skill_requirements: "Raging Slash [Level 2+], Death Spin [Level 3+]",
-                type: "Active",
-                additional_types: "Close Range, Physical",
-                weapon_requirements: "Two-handed Greatsword",
-                cooldown: "None",
-                skill_photo: "",
-                description: "Thrust your darkened greatsword into 2 enemies up to 3 m in front of you, then pull it out to deal 129% (210%) damage 2 times. The stab attack is always a critical, and pulling the sword out steals health from the enemy, restoring 7% (43%) of your max health. In PvP zones, the amount restored is halved." 
-            },
+            // groundBreaker = {
+            //     name: "Ground Breaker",
+            //     level_requirements: "Level 19",
+            //     skill_requirements: "Raging Slash [Level 2+], Death Spin [Level 3+]",
+            //     type: "Active",
+            //     additional_types: "Close Range, Physical",
+            //     weapon_requirements: "Two-handed Greatsword",
+            //     cooldown: "None",
+            //     skill_photo: "",
+            //     description: "Thrust your darkened greatsword into 2 enemies up to 3 m in front of you, then pull it out to deal 129% (210%) damage 2 times. The stab attack is always a critical, and pulling the sword out steals health from the enemy, restoring 7% (43%) of your max health. In PvP zones, the amount restored is halved." 
+            // },
 
-            darkBreaker = {
-                name: "Dark Breaker",
-                level_requirements: "Level 22",
-                skill_requirements: "Raging Slash [Level 4+], Void Slash [Level 3+]",
-                type: "Active",
-                additional_types: "Dark, Close Range, Physical",
-                weapon_requirements: "Two-handed Greatsword",
-                cooldown: "None",
-                skill_photo: "",
-                description: "Gather dark power into your greatsword and strike down with great force to deal 357% (582%) dark damage to 8 enemies within 3 m. The impact area resonates with darkness for 5 sec, dealing 148% (238%) dark damage to 8 enemies in range every second. This skill can only be used by consuming Dark Aura at max stacks. You will be immune to knockback while this skill is active." 
-            },
+            // darkBreaker = {
+            //     name: "Dark Breaker",
+            //     level_requirements: "Level 22",
+            //     skill_requirements: "Raging Slash [Level 4+], Void Slash [Level 3+]",
+            //     type: "Active",
+            //     additional_types: "Dark, Close Range, Physical",
+            //     weapon_requirements: "Two-handed Greatsword",
+            //     cooldown: "None",
+            //     skill_photo: "",
+            //     description: "Gather dark power into your greatsword and strike down with great force to deal 357% (582%) dark damage to 8 enemies within 3 m. The impact area resonates with darkness for 5 sec, dealing 148% (238%) dark damage to 8 enemies in range every second. This skill can only be used by consuming Dark Aura at max stacks. You will be immune to knockback while this skill is active." 
+            // },
 
-            intimidation = {
-                name: "Intimidation",
-                level_requirements: "Level 28",
-                skill_requirements: "Greatsword Mastery",
-                type: "Active",
-                additional_types: "Close Range, Physical",
-                weapon_requirements: "None",
-                cooldown: "16 Seconds",
-                skill_photo: "",
-                description: "Overwhelm enemies with a show of force, dealing 121% (193%) damage to 5 enemies within 3 m. Enemies lost the will to fight, reducing their physical attack and magic attack by 9% (36%) and their movement speed and jump power by 9% (36%) for 4 sec. When at max stacks, Dark Aura is consumed to trigger a more powerful version of this skill. Some powerful enemies are immune." 
-            },
+            // intimidation = {
+            //     name: "Intimidation",
+            //     level_requirements: "Level 28",
+            //     skill_requirements: "Greatsword Mastery",
+            //     type: "Active",
+            //     additional_types: "Close Range, Physical",
+            //     weapon_requirements: "None",
+            //     cooldown: "16 Seconds",
+            //     skill_photo: "",
+            //     description: "Overwhelm enemies with a show of force, dealing 121% (193%) damage to 5 enemies within 3 m. Enemies lost the will to fight, reducing their physical attack and magic attack by 9% (36%) and their movement speed and jump power by 9% (36%) for 4 sec. When at max stacks, Dark Aura is consumed to trigger a more powerful version of this skill. Some powerful enemies are immune." 
+            // },
 
-            bloodPrice = {
-                name: "Blood Price",
-                level_requirements: "Level 31",
-                skill_requirements: "Bloodlust [Level 6+], Adrenaline Rush [Level 2+]",
-                type: "Active",
-                additional_types: "Close Range, Physical",
-                weapon_requirements: "None",
-                cooldown: "16 Seconds",
-                skill_photo: "",
-                description: "Overwhelm enemies with a show of force, dealing 121% (193%) damage to 5 enemies within 3 m. Enemies lost the will to fight, reducing their physical attack and magic attack by 9% (36%) and their movement speed and jump power by 9% (36%) for 4 sec. When at max stacks, Dark Aura is consumed to trigger a more powerful version of this skill. Some powerful enemies are immune." 
-            },
+            // bloodPrice = {
+            //     name: "Blood Price",
+            //     level_requirements: "Level 31",
+            //     skill_requirements: "Bloodlust [Level 6+], Adrenaline Rush [Level 2+]",
+            //     type: "Active",
+            //     additional_types: "Close Range, Physical",
+            //     weapon_requirements: "None",
+            //     cooldown: "16 Seconds",
+            //     skill_photo: "",
+            //     description: "Overwhelm enemies with a show of force, dealing 121% (193%) damage to 5 enemies within 3 m. Enemies lost the will to fight, reducing their physical attack and magic attack by 9% (36%) and their movement speed and jump power by 9% (36%) for 4 sec. When at max stacks, Dark Aura is consumed to trigger a more powerful version of this skill. Some powerful enemies are immune." 
+            // },
         ]
     },
 
