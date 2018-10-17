@@ -41,6 +41,42 @@ var jobs = {
                 description: "A swing of your sword deals 79% (133%) 2 times to 5 enemies up to 3 m in front of you." 
             },
 
+            torndaoSlash = {
+                name: "Tornado Slash",
+                level_requirements: "None",
+                skill_requirements: "None",
+                type: "Active",
+                additional_types: "Close Range, Physical",
+                weapon_requirements: "Main Hand Longsword",
+                cooldown: "None",
+                skill_photo: "images/knight/tornadoSlash.png",
+                description: "Perform a spin slash, dealing 81% (126%) damage 3 times to 8 enemies within 3 m and pulling them in 1 m. Consumes 12 spirit." 
+            },
+
+            ironShield = {
+                name: "Iron Shield",
+                level_requirements: "10",
+                skill_requirements: "None",
+                type: "Active",
+                additional_types: "None",
+                weapon_requirements: "Off-hand Shield",
+                cooldown: "None",
+                skill_photo: "images/knight/ironShield.png",
+                description: "Adopt a defensive stance with your shield, reducing incoming damage by 25% (70%). The skill lasts while the skill key is held down, although powerful attacks may break the skill early. This skill can cancel other skills. In PvP zones, the damage reduction is halved." 
+            },
+
+            divineStrike = {
+                name: "Divine Strike",
+                level_requirements: "13",
+                skill_requirements: "Tornado Slash [Level 2+], Cross Cut [Level 2+]",
+                type: "Active",
+                additional_types: "Holy, Close Range, Physical",
+                weapon_requirements: "Main Hand Longsword",
+                cooldown: "8 seconds",
+                skill_photo: "images/knight/divineStrike.png",
+                description: "Gathers light and smashes it down, creating a shockwave that deals 501% (816%) holy damage to 8 enemies and knocks them back 2 m. Enemy attacks will not push you back while this skill is active." 
+            },
+
         ]
     },
 
