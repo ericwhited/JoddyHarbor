@@ -1,5 +1,3 @@
-// var jobPicker = document.getElementById("classPicker");
-var body = document.getElementsByTagName("body");
 
 var leftBackground = document.getElementById("left").style
 // job Photo
@@ -12,23 +10,19 @@ var skillBox = document.getElementById("top")
 var descriptionBox = document.getElementById("bottom")
 // job video
 var jobsVideo = document.getElementById("jobsVideo")
-
 // video button
 var videoButton = document.getElementById("videoButton")
 // video div
-
 // skills button
-// document.getElementById("skillsButton")
+var skillsButton = document.getElementById("skillsButton")
+// skill photo
 var skillPhoto = document.getElementsByClassName("skillPhoto");
-
+// modal
 var show = document.getElementById("show")
 // X button
 var X = document.getElementById("X")
-
 // Gray Box to add shadow
 var greyBox = document.getElementById("greyBox")
-
-var modal = document.getElementById("show")
 // video / skill buttons 
 var buttons = document.getElementsByClassName("button");
 
@@ -167,3 +161,14 @@ function clicked2(event) {
 // shows video
 videoButton.addEventListener('click', showVideo)
 skillsButton.addEventListener('click', showSkills)
+
+
+X.addEventListener('click', function(){
+    greyBox.style.background = "none"
+    greyBox.style.visibility = "hidden";
+    X.style.opacity = "0"
+    show.style.opacity = 0;
+    show.style.zIndex = -1;
+    buttons[0].style.background = "rgba(0, 0, 0, 0.8)";
+    buttons[1].style.background = "rgba(0, 0, 0, 0.5)";
+})
