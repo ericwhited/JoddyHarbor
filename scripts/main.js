@@ -1,14 +1,14 @@
 // Class Picker Stuff
 
-// MS2 Job Declarations 
-var knight = document.getElementById("knightLink")
-var zerker = document.getElementById("zerkerLink")
-var priest = document.getElementById("priestLink")
-var wizard = document.getElementById("wizardLink")
-var archer = document.getElementById("archerLink")
-var hgunner = document.getElementById("hgunnerLink")
-var thief = document.getElementById("thiefLink")
-var assassin = document.getElementById("assassinLink")
+// // MS2 Job Declarations 
+// var knight = document.getElementById("knightLink")
+// var zerker = document.getElementById("zerkerLink")
+// var priest = document.getElementById("priestLink")
+// var wizard = document.getElementById("wizardLink")
+// var archer = document.getElementById("archerLink")
+// var hgunner = document.getElementById("hgunnerLink")
+// var thief = document.getElementById("thiefLink")
+// var assassin = document.getElementById("assassinLink")
 
 // Modal Areas
 // The background of the model left side behind the job photo
@@ -44,39 +44,39 @@ var modal = document.getElementById("show")
 var buttons = document.getElementsByClassName("button");
 
 // click off model event 
-window.onclick = function(event) {
-    if(event.target == greyBox){
-        // gets ride of grey box
-        greyBox.style.background = "none"
-        greyBox.style.visibility = "hidden";
-        X.style.opacity = "0"
-        show.style.opacity = 0;
-        show.style.zIndex = -1;
-        buttons[0].style.background = "rgba(0, 0, 0, 0.8)";
-        buttons[1].style.background = "rgba(0, 0, 0, 0.5)";
-        jobsVideo.src = "none"
-    }
-}
+// window.onclick = function(event) {
+//     if(event.target == greyBox){
+//         // gets ride of grey box
+//         greyBox.style.background = "none"
+//         greyBox.style.visibility = "hidden";
+//         X.style.opacity = "0"
+//         show.style.opacity = 0;
+//         show.style.zIndex = -1;
+//         buttons[0].style.background = "rgba(0, 0, 0, 0.8)";
+//         buttons[1].style.background = "rgba(0, 0, 0, 0.5)";
+//         jobsVideo.src = "none"
+//     }
+// }
 
 
 
-// shows video
-videoButton.addEventListener('click', showVideo)
-skillsButton.addEventListener('click', showSkills)
+// // shows video
+// videoButton.addEventListener('click', showVideo)
+// skillsButton.addEventListener('click', showSkills)
 
-function showVideo() {
-    skillBox.style.visibility = "hidden";
-    descriptionBox.style.visibility = "hidden";
-    video.style.visibility = "visible";
-}
+// function showVideo() {
+//     skillBox.style.visibility = "hidden";
+//     descriptionBox.style.visibility = "hidden";
+//     video.style.visibility = "visible";
+// }
 
 
-function showSkills() {
-    skillBox.style.visibility = "visible";
-    descriptionBox.style.visibility = "visible";
-    video.style.visibility = "hidden";
-    jobsVideo.src = "none"
-}
+// function showSkills() {
+//     skillBox.style.visibility = "visible";
+//     descriptionBox.style.visibility = "visible";
+//     video.style.visibility = "hidden";
+//     jobsVideo.src = "none"
+// }
 
 // skill highlight function
 function clicked(event) {
