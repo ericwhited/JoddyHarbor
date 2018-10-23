@@ -73,6 +73,9 @@
   margin: 20px 10px 0 0;
   transition: all .4s; }
 
+.button:focus {
+  outline: none; }
+
 #jobName {
   background: rgba(0, 0, 0, 0.5);
   border: 3px solid white;
@@ -89,7 +92,7 @@
   border: 2px solid black;
   border-radius: 20px;
   padding: 4px 8px;
-  transition: all .4s; }
+  transition: all .2s; }
 
 .skillDescription {
   font-size: 30px;
