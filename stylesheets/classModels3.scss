@@ -84,6 +84,10 @@
     transition: all .4s;
 }
 
+.button:focus {
+    outline: none;
+}
+
 #jobName {
     // text-decoration: underline;
     background: rgba(0, 0, 0, 0.5);
@@ -103,7 +107,7 @@
     border: 2px solid black;
     border-radius: 20px;
     padding: 4px 8px;
-    transition: all .4s;
+    transition: all .2s;
     // max-width: 50px;
 }
 
@@ -116,6 +120,7 @@
     text-align: center;
     font-size: 35px;
     margin-top: 15px; 
+
 }
 
 #jobsVideo {

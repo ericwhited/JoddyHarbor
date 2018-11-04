@@ -1,6 +1,7 @@
-var jobs = {
-    knight: {
+var jobs = [
+    knight = {
         name: "Knight",
+        miniImage: "images/allClasses/knightMini.png",
         photo: "images/knight/Knight.png",
         video: "https://www.youtube.com/embed/CHLD3I1fqCE",
         region: "url('images/backgrounds/perion.jpg')",
@@ -80,8 +81,9 @@ var jobs = {
         ]
     },
 
-    berserker: {
+    berserker = {
         name: "Berserker",
+        miniImage: "images/allClasses/zerkerMini.png",
         photo: "images/zerker/zerker.png",
         video: "https://www.youtube.com/embed/yxtKKjhqoMQ?rel=0&amp;showinfo=0",
         region: "url('images/backgrounds/perion.jpg')",
@@ -220,8 +222,9 @@ var jobs = {
         ]
     },
 
-    priest: {
+    priest = {
         name: "Priest",
+        miniImage: "images/allClasses/priestMini.png",
         photo: "images/priest/Priest.png",
         video: "https://www.youtube.com/embed/OOZbpmr6hjU",
         region: "url('images/backgrounds/ellinia.png')",
@@ -241,8 +244,9 @@ var jobs = {
         ]
     },
 
-    wizard: {
+    wizard = {
         name: "Wizard",
+        miniImage: "images/allClasses/wizardMini.png",
         photo: "images/wizard/Wizard.png",
         video: "https://www.youtube.com/embed/BwHnmCtUnXg",
         region: "url('images/backgrounds/ellinia.png')",
@@ -262,8 +266,9 @@ var jobs = {
         ]
     },
 
-    archer: {
+    archer = {
         name: "Archer",
+        miniImage: "images/allClasses/archerMini.png",
         photo: "images/archer/Archer.png",
         video: "https://www.youtube.com/embed/mU-CmVJrwKE?rel=0&amp",
         region: "url('images/backgrounds/hene.jpg')",
@@ -283,8 +288,9 @@ var jobs = {
         ]
     },
 
-    heavyGunner: {
+    heavyGunner = {
         name: "Heavy Gunner",
+        miniImage: "images/allClasses/HGunnerMini.png",
         photo: "images/heavyGunner/HeavyGunner.png",
         video: "https://www.youtube.com/embed/T2e3LXeqme4",
         region: "url('images/backgrounds/hene.jpg')",
@@ -304,8 +310,9 @@ var jobs = {
         ]
     },
 
-    thief: {
+    thief = {
         name: "Thief",
+        miniImage: "images/allClasses/thiefMini.png",
         photo: "images/thief/Thief.png",
         video: "https://www.youtube.com/embed/FxvQsbPFYzc",
         region: "url('images/backgrounds/kern.jpg')",
@@ -325,8 +332,9 @@ var jobs = {
         ]
     },
 
-    assassin: {
+    assassin = {
         name: "Assassin",
+        miniImage: "images/allClasses/AssassinMini.png",
         photo: "images/assassin/Assassin.png",
         video: "https://www.youtube.com/embed/Z2UbJG4YkuM",
         region: "url('images/backgrounds/kern.jpg')",
@@ -346,4 +354,4 @@ var jobs = {
         ]
     },
 
-}
+]
