@@ -1,4 +1,5 @@
 
+
 var leftBackground = document.getElementById("left").style
 // job Photo
 var jobPhoto = document.getElementById("jobPhoto")
@@ -51,8 +52,7 @@ jobs.forEach(function(e){
     }
 
         // makes the first skill display on click
-        descriptionBox.innerHTML = '<h1 class="skillName">'+e.skills[0].name+'</h1>' + '<p class="skillDescription">'+e.skills[0].description+'</p>'
-
+        descriptionBox.innerHTML = '<h1 class="skillName">'+ e.skills[0].name + '</h1>' + '<p class="skillDescription">'+ e.skills[0].description + '</p>'
         // add sskill photos
         for(let i=0; i<e.skills.length; i++){
             // creating img
@@ -65,7 +65,19 @@ jobs.forEach(function(e){
             skillBox.append(skillImage);
             // click an image to change the inside of the bottom box to the skill desscription
             skillImage.addEventListener('click', function(){
-            descriptionBox.innerHTML = '<h1 class="skillName">'+e.skills[i].name+'</h1>' + '<p class="skillDescription">'+e.skills[i].description+'</p>'
+            descriptionBox.innerHTML = 
+                // name
+                '<h1 class="skillName">'+e.skills[i].name+'</h1>' 
+                // desc
+                + '<p class="skillDescription">'+e.skills[i].description+'</p>'
+                // type 
+                + '<p id="skillType">' + e.skills[i].type + '</p>'
+                // level requirement
+                + '<p id="'
+                // skill requirements
+                // additional types
+                // weapon requirements
+                // cooldown
             })  
             // // default first skill has grey background
             skillPhoto[0].style.background = "rgba(0, 0, 0, 0.4)"
