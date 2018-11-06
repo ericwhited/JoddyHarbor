@@ -71,9 +71,9 @@ jobs.forEach(function(e){
                 // desc
                 + '<p class="skillDescription">'+e.skills[i].description+'</p>'
                 // type 
-                + '<p id="skillType">' + e.skills[i].type + '</p>'
+                // + '<p id="skillType">' + e.skills[i].type + '</p>'
                 // level requirement
-                + '<p id="'
+                // + '<p id="'
                 // skill requirements
                 // additional types
                 // weapon requirements
