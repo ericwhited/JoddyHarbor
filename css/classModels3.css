@@ -25,6 +25,13 @@
   left: 0;
   right: 0; }
 
+.arrows {
+  position: absolute;
+  top: 360px; }
+
+#rightIcon {
+  right: 0; }
+
 .sides {
   border-radius: 20px;
   margin: 10px; }
